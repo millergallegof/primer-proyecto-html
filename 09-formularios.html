@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
 </head>
+
 <body>
     <h1>Formularios</h1>
 
@@ -14,7 +16,8 @@
     <!--agrupar informacion-->
     <!--<form action="https://www.google.com/search"> se utiliza para cuando se envie algo se dirija a una pagina-->
     <!--form method="GET"  permite estar escuchando informacion, parametros del formulario-->
-    <form method="POST"> <!--los datos del formulario no aparecem-->
+    <form method="POST">
+        <!--los datos del formulario no aparecem-->
         <!--Recibir informacion-->
         <!--<input>-->
 
@@ -34,9 +37,34 @@
         <!--Opcion 3-->
         <!--<input type="image" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.cointelegraph.com%2Ftags%2Fpaypal&psig=AOvVaw0b9muPKle6EyxNlT6bojK5&ust=1632064591813000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNi0tMToiPMCFQAAAAAdAAAAABAI">-->
         <!--opcion 4-->
-        <button type="submit">Enviar</button> <!---->
+        <button type="submit">Enviar</button>
+        <!---->
         <br>
+        <hr>
+        <!--Etiquetas de agrupacion-->
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="nombre">
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Direccion</legend>
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion">
+            <br>
+            <label for="ciudad">Ciudad: </label>
+            <input type="text" id="ciudad" name="ciudad">
+        </fieldset>
+<hr>
 
+
+
+
+        <hr>
         <label for="name">nombre</label>
         <input type="text" id="name">
         <br>
@@ -50,4 +78,5 @@
     </form>
 
 </body>
+
 </html>
